@@ -1,8 +1,17 @@
+:root {
+  --blue: #0084fd;
+  --skyblue: #b5ddff;
+  --purple: #9792e4;
+  --black: #333333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* GENERAL */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -25,6 +34,21 @@ a {
   text-decoration: none;
 }
 
+/* ROW-COL-CARD */
+
+.row {
+  margin: 0 -1.5rem;
+}
+
+.col {
+  padding: 1.5rem;
+}
+
+.card {
+  height: 100%;
+  text-align: center;
+}
+
 /* DEBUG */
 .debug * {
   border: 2px dashed black;
@@ -41,7 +65,7 @@ a {
 /* HEADER */
 
 .header {
-  background: #0084fd;
+  background: var(--blue);
   color: white;
 
   height: 80px;
@@ -89,16 +113,49 @@ a {
 
 /* FIRST SECTION */
 
-.row {
-  margin: 0 -1.5rem;
+.skyblue {
+  background: var(--skyblue);
+  border-radius: 20px;
 }
 
-.col {
+.skyblue h2,
+.skyblue i,
+.app-store a {
+  color: var(--blue);
+  padding: 1rem;
+}
+
+/* STRATEGIC SECTION */
+
+#strategic {
+  background: var(--purple);
+}
+
+.bg-white {
+  background: white;
+  border-radius: 60px;
   padding: 1.5rem;
 }
 
-.card {
-  height: 100%;
+.white-text * {
+  color: white;
+  padding: 1.5rem;
+}
+
+.black-text h2,
+p {
+  padding: 1.5rem 0;
+}
+
+.circle-arrow {
+  background: var(--purple);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.circle-arrow i {
+  color: black;
+  padding: 1.5rem 0;
 }
 
 /* TABLET RESPONSIVE */
@@ -121,12 +178,18 @@ a {
 /* DEKSTOP RESPONSIVE */
 
 @media screen and (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* HEADER */
   .compact-menu {
     display: none;
   }
   .extended-menu {
     display: block;
   }
+  /* FIRST SECTION */
   #first-section .col:first-child .card {
     display: flex;
   }
@@ -135,5 +198,17 @@ a {
   }
   .card-img {
     width: 50%;
+  }
+  /* STRATEGIC SECTION */
+  #strategic .row {
+    display: flex;
+    padding: 5rem;
+  }
+  #strategic .row .col {
+    width: 50%;
+  }
+
+  .bg-white {
+    margin-top: 5rem;
   }
 }
