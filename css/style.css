@@ -3,6 +3,7 @@
   --skyblue: #b5ddff;
   --purple: #9792e4;
   --black: #333333;
+  --yellow: #fdc15f;
 }
 
 * {
@@ -238,6 +239,28 @@ h3 {
   border-radius: 20px;
 }
 
+/* GET STARTED SECTION */
+#get-started {
+  background: var(--purple);
+}
+
+.get-started {
+  text-align: center;
+  color: white;
+}
+
+#free {
+  color: var(--yellow);
+  font-size: 3rem;
+}
+
+#started-button {
+  background: white;
+  color: var(--purple);
+
+  padding: 15px 40px;
+  border-radius: 30px;
+}
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
