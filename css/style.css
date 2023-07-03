@@ -125,6 +125,10 @@ a {
   padding: 1rem;
 }
 
+.card-img img {
+  width: 50%;
+}
+
 /* STRATEGIC SECTION */
 
 #strategic {
@@ -210,6 +214,30 @@ h3 {
   border-radius: 20px;
 }
 
+/* ABOUT US SECTION */
+
+#about-us {
+  text-align: left;
+}
+
+#about-us h2 {
+  color: var(--purple);
+  padding-bottom: 1.5rem;
+}
+
+.about-img img {
+  width: 50%;
+  border-radius: 50%;
+  padding-bottom: 1.5rem;
+}
+
+.linkedin-button {
+  background: var(--purple);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
@@ -245,6 +273,14 @@ h3 {
     flex-wrap: wrap;
   }
   #benefits .col {
+    width: 50%;
+  }
+
+  /* ABOUT US SECTION */
+  #about-us .row {
+    display: flex;
+  }
+  #about-us .col {
     width: 50%;
   }
 }
@@ -291,5 +327,12 @@ h3 {
   /* BENEFITS SECTION */
   #benefits .col {
     width: calc(100% / 3);
+  }
+  /* ABOUT US SECTION */
+  #about-us .about-left {
+    width: 70%;
+  }
+  #about-us .about-right {
+    width: 30%;
   }
 }
