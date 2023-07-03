@@ -180,6 +180,36 @@ p {
   color: white;
 }
 
+/* BENEFITS SECTION */
+#benefits {
+  background: var(--purple);
+}
+
+.benefits-intro {
+  text-align: center;
+  color: white;
+  font-size: 1.75rem;
+}
+
+#benefits .card {
+  background: white;
+  border-radius: 10px;
+  padding: 45px 35px;
+  text-align: left;
+}
+
+.card .number,
+h3 {
+  color: var(--purple);
+  padding: 0.75rem 0;
+}
+
+.more {
+  padding: 10px 40px;
+  background: var(--purple);
+  border-radius: 20px;
+}
+
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
@@ -207,6 +237,16 @@ p {
   .testimonial img {
     width: 80%;
   }
+
+  /* BENEFITS SECTION */
+
+  #benefits .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #benefits .col {
+    width: 50%;
+  }
 }
 
 /* DEKSTOP RESPONSIVE */
@@ -223,6 +263,7 @@ p {
   .extended-menu {
     display: block;
   }
+
   /* FIRST SECTION */
   #first-section .col:first-child .card {
     display: flex;
@@ -233,6 +274,7 @@ p {
   .card-img {
     width: 50%;
   }
+
   /* STRATEGIC SECTION */
   #strategic .row {
     display: flex;
@@ -244,5 +286,10 @@ p {
 
   .bg-white {
     margin-top: 5rem;
+  }
+
+  /* BENEFITS SECTION */
+  #benefits .col {
+    width: calc(100% / 3);
   }
 }
