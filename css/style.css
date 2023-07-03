@@ -58,6 +58,8 @@ a {
 /* CONTAINER */
 
 .container {
+  min-width: 420px;
+  max-width: 1140px;
   margin: 0 auto;
   width: 100%;
   padding: 0 1.5rem;
@@ -261,6 +263,17 @@ h3 {
   padding: 15px 40px;
   border-radius: 30px;
 }
+
+/* FOOTER */
+#footer {
+  background: var(--black);
+}
+
+.footer-p {
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
@@ -311,10 +324,6 @@ h3 {
 /* DEKSTOP RESPONSIVE */
 
 @media screen and (min-width: 992px) {
-  .container {
-    max-width: 1140px;
-  }
-
   /* HEADER */
   .compact-menu {
     display: none;
