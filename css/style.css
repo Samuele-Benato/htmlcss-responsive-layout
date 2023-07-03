@@ -8,6 +8,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  padding-top: 80px;
+}
+
+section {
+  padding: 3rem 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -17,12 +25,17 @@ a {
   text-decoration: none;
 }
 
+/* DEBUG */
+.debug * {
+  border: 2px dashed black;
+  min-height: 30px;
+}
 /* CONTAINER */
 
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 /* HEADER */
@@ -76,9 +89,33 @@ a {
 
 /* FIRST SECTION */
 
+.row {
+  margin: 0 -1.5rem;
+}
+
+.col {
+  padding: 1.5rem;
+}
+
+.card {
+  height: 100%;
+}
+
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
+  #first-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #first-section .col {
+    width: calc(100% / 3);
+  }
+
+  #first-section .col:first-child {
+    width: calc(100% / 3 * 2);
+  }
 }
 
 /* DEKSTOP RESPONSIVE */
@@ -89,5 +126,14 @@ a {
   }
   .extended-menu {
     display: block;
+  }
+  #first-section .col:first-child .card {
+    display: flex;
+  }
+  .card-content {
+    width: 50%;
+  }
+  .card-img {
+    width: 50%;
   }
 }
