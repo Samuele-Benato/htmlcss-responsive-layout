@@ -118,6 +118,7 @@ p {
   display: flex;
   list-style-type: none;
   gap: 1.25rem;
+  font-size: 1rem;
 }
 
 #started {
@@ -659,7 +660,41 @@ p {
     display: flex;
   }
   .card-content {
-    width: 50%;
+    width: 60%;
+  }
+
+  .card-img {
+    width: 40%;
+    align-self: flex-end;
+  }
+
+  .card-img img {
+    width: 100%;
+  }
+
+  .skyblue i {
+    font-size: 5rem;
+  }
+
+  #app-store * {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  .skyblue p {
+    color: var(--gray-skyblue);
+
+    font-weight: 900;
+    font-size: 1.25rem;
+
+    padding: 0;
+  }
+
+  .skyblue h2,
+  .skyblue i {
+    color: var(--blue);
+    padding: 1rem;
   }
 
   /* STRATEGIC SECTION */
