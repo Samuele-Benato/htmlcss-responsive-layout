@@ -702,12 +702,44 @@ p {
     display: flex;
     padding: 5rem;
   }
+
   #strategic .row .col {
     width: 50%;
   }
 
+  #strategic p {
+    line-height: 2rem;
+  }
+
   .bg-white {
     margin-top: 5rem;
+  }
+
+  .white-text h2 {
+    padding-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .white-text p,
+  .black-text p {
+    font-size: 1.25rem;
+  }
+
+  .bg-white {
+    background: white;
+    border-radius: 60px;
+    padding: 2rem;
+  }
+
+  .black-text h2 {
+    padding-top: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .black-text p {
+    font-style: italic;
+    padding: 1.5rem 0 2.5rem;
   }
 
   /* BENEFITS SECTION */
