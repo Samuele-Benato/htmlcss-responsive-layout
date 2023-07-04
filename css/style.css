@@ -193,12 +193,6 @@ p {
   background: var(--purple);
 }
 
-.bg-white {
-  background: white;
-  border-radius: 60px;
-  padding: 2rem;
-}
-
 .white-text * {
   color: white;
   padding: 1.5rem;
@@ -209,15 +203,21 @@ p {
   font-size: 3rem;
 }
 
+.white-text p,
+.black-text p {
+  font-size: 1.25rem;
+}
+
+.bg-white {
+  background: white;
+  border-radius: 60px;
+  padding: 2rem;
+}
+
 .black-text h2 {
   padding-top: 2.5rem;
   font-size: 2.25rem;
   font-weight: bold;
-}
-
-.white-text p,
-.black-text p {
-  font-size: 1.25rem;
 }
 
 .black-text p {
@@ -510,6 +510,33 @@ p {
     font-weight: 700;
   }
 
+  /* STRATEGIC SECTION */
+
+  .white-text h2 {
+    padding-top: 6rem;
+    font-size: 4.5rem;
+  }
+
+  .white-text p,
+  .black-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .black-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .circle-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle-arrow i {
+    line-height: 25px;
+    font-size: 1.2rem;
+  }
+
   /* TESTIMONIAL SECTION */
   #testimonials .purple {
     display: flex;
@@ -523,7 +550,25 @@ p {
     width: 70%;
   }
   .testimonial img {
-    width: 80%;
+    width: 100%;
+  }
+  .testimonial-intro h3 {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-intro h2 {
+    font-size: 2.75rem;
+  }
+
+  #testimonials p,
+  .name {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .testimonial img {
+    width: 100%;
+    margin: 0;
   }
 
   /* BENEFITS SECTION */
