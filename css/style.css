@@ -1,9 +1,12 @@
 :root {
   --blue: #0084fd;
   --skyblue: #b5ddff;
+  --gray-skyblue: #6e869b;
   --purple: #9792e4;
+  --light-purple: #d5d4f4;
   --black: #333333;
   --yellow: #fdc15f;
+  --gray: #818181;
 }
 
 * {
@@ -35,6 +38,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 2.5rem;
+}
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
 /* ROW-COL-CARD */
 
 .row {
@@ -50,18 +62,13 @@ a {
   text-align: center;
 }
 
-/* DEBUG */
-.debug * {
-  border: 2px dashed black;
-  min-height: 30px;
-}
 /* CONTAINER */
 
 .container {
-  min-width: 420px;
+  min-width: 375px;
   max-width: 1140px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   padding: 0 1.5rem;
 }
 
@@ -90,9 +97,17 @@ a {
   align-items: center;
 }
 
+.logo img {
+  width: 80px;
+}
+
 .menu {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.compact-menu i {
+  font-size: 2rem;
 }
 
 .extended-menu {
@@ -119,17 +134,57 @@ a {
 .skyblue {
   background: var(--skyblue);
   border-radius: 20px;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.skyblue h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.skyblue h2.text-left {
+  padding-left: 2.5rem;
+}
+
+.skyblue i {
+  font-size: 6rem;
+}
+
+#app-store {
+  background: var(--blue);
+
+  padding: 0 40px;
+  border-radius: 40px;
+  text-align: center;
+
+  display: inline-block;
+}
+
+#app-store * {
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+}
+
+.skyblue p {
+  color: var(--gray-skyblue);
+
+  font-weight: 900;
+  font-size: 1.25rem;
+
+  padding: 1.5rem 2.5rem 2rem;
 }
 
 .skyblue h2,
-.skyblue i,
-.app-store a {
+.skyblue i {
   color: var(--blue);
   padding: 1rem;
 }
 
 .card-img img {
-  width: 50%;
+  width: 80%;
+  margin-bottom: -5px;
+  padding-top: 1.5rem;
 }
 
 /* STRATEGIC SECTION */
@@ -141,7 +196,7 @@ a {
 .bg-white {
   background: white;
   border-radius: 60px;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .white-text * {
@@ -149,20 +204,47 @@ a {
   padding: 1.5rem;
 }
 
-.black-text h2,
-p {
-  padding: 1.5rem 0;
+.white-text h2 {
+  padding-top: 5rem;
+  font-size: 3rem;
+}
+
+.black-text h2 {
+  padding-top: 2.5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.white-text p,
+.black-text p {
+  font-size: 1.25rem;
+}
+
+.black-text p {
+  font-style: italic;
+  padding: 1.5rem;
 }
 
 .circle-arrow {
   background: var(--purple);
+
   padding: 15px;
   border-radius: 50%;
+
+  display: inline-block;
+  width: 70px;
+  height: 70px;
 }
 
 .circle-arrow i {
   color: black;
-  padding: 1.5rem 0;
+
+  line-height: 35px;
+  font-size: 1.5rem;
+}
+
+.margin-top {
+  margin-top: auto;
 }
 
 /* TESTIMONIALS SECTION */
@@ -173,18 +255,39 @@ p {
   padding: 1.5rem;
 }
 
+#testimonials .card {
+  border-radius: 70px;
+}
+
+.testimonial-intro h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
 .testimonial-intro h2 {
   color: var(--purple);
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+#testimonials p {
+  font-size: 1.5rem;
 }
 
 .testimonial img {
-  width: 50%;
-  border-radius: 50%;
+  width: 80%;
+  clip-path: circle();
+  margin: 1.5rem 0;
 }
 
 .testimonial-text {
   color: white;
+}
+
+.name {
+  font-size: 1.75rem;
+  padding: 1.5rem 0;
 }
 
 /* BENEFITS SECTION */
@@ -195,26 +298,45 @@ p {
 .benefits-intro {
   text-align: center;
   color: white;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  padding: 3rem 0;
 }
 
 #benefits .card {
   background: white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 45px 35px;
   text-align: left;
 }
 
-.card .number,
-h3 {
+.card .number {
   color: var(--purple);
-  padding: 0.75rem 0;
+  padding-bottom: 1.5rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.benefit-title {
+  color: var(--purple);
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+#benefits p {
+  color: var(--gray);
 }
 
 .more {
-  padding: 10px 40px;
   background: var(--purple);
+
+  padding: 10px 50px;
+  margin-top: 1.5rem;
+
+  letter-spacing: 5px;
+  font-weight: bold;
+
   border-radius: 20px;
+  display: inline-block;
 }
 
 /* ABOUT US SECTION */
@@ -223,22 +345,51 @@ h3 {
   text-align: left;
 }
 
+.about-us-title {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
 #about-us h2 {
   color: var(--purple);
-  padding-bottom: 1.5rem;
+}
+
+#about-us p {
+  padding-top: 2rem;
 }
 
 .about-img img {
+  clip-path: circle();
   width: 50%;
-  border-radius: 50%;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-img {
+  position: relative;
+}
+
+.quote-left {
+  position: absolute;
+  top: 0;
+  left: 40%;
+
+  color: var(--purple);
+  font-size: 5rem;
 }
 
 .linkedin-button {
   background: var(--purple);
   color: white;
+
   padding: 10px 15px;
+  margin-top: 1.5rem;
+
   border-radius: 20px;
+  display: inline-block;
+}
+
+.fa-linkedin {
+  padding-right: 10px;
 }
 
 /* GET STARTED SECTION */
@@ -251,32 +402,73 @@ h3 {
   color: white;
 }
 
+.get-started h4 {
+  padding: 1.5rem 0;
+  color: var(--light-purple);
+  font-weight: 200;
+}
+
+.get-started h3 {
+  font-size: 2rem;
+}
+
 #free {
   color: var(--yellow);
   font-size: 3rem;
+  padding: 2rem 0;
 }
 
 #started-button {
   background: white;
   color: var(--purple);
 
-  padding: 15px 40px;
+  padding: 15px 60px;
+  margin: 1.5rem 0;
   border-radius: 30px;
+
+  font-weight: bold;
+  letter-spacing: 5px;
+
+  display: inline-block;
 }
 
+#privacy {
+  text-decoration: underline;
+}
 /* FOOTER */
 #footer {
   background: var(--black);
 }
 
-.footer-p {
+#footer p {
   color: white;
-  padding: 3rem;
+  padding: 1.75rem;
   text-align: center;
+  line-height: 1.2rem;
 }
+
+#footer p a {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
 /* TABLET RESPONSIVE */
 
 @media screen and (min-width: 767px) {
+  /* SETTINGS */
+  .row {
+    margin: 0 -1rem;
+  }
+
+  .col {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   /* FIRST SECTION */
 
   #first-section .row {
@@ -292,11 +484,43 @@ h3 {
     width: calc(100% / 3 * 2);
   }
 
+  #first-section p {
+    padding: 1.25rem 0;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  #first-section h2 {
+    padding: 1.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  .card-img {
+    width: 80%;
+  }
+
+  .card-content {
+    text-align: left;
+  }
+
+  #app-store * {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
   /* TESTIMONIAL SECTION */
   #testimonials .purple {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .testimonial {
+    width: 30%;
+  }
+  .testimonial-text {
+    width: 70%;
   }
   .testimonial img {
     width: 80%;
@@ -337,9 +561,6 @@ h3 {
     display: flex;
   }
   .card-content {
-    width: 50%;
-  }
-  .card-img {
     width: 50%;
   }
 
