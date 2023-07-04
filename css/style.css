@@ -613,6 +613,34 @@ p {
     color: var(--purple);
     font-size: 4rem;
   }
+  /* GET STARTED SECTION */
+
+  .get-started h3 {
+    font-size: 3rem;
+  }
+
+  #free {
+    font-size: 5rem;
+  }
+
+  #started-button {
+    background: white;
+    color: var(--purple);
+
+    padding: 30px 60px;
+    margin: 1.5rem 0;
+    border-radius: 50px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    display: inline-block;
+  }
+
+  #privacy {
+    text-decoration: underline;
+  }
 }
 
 /* DEKSTOP RESPONSIVE */
