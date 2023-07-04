@@ -582,11 +582,36 @@ p {
   }
 
   /* ABOUT US SECTION */
+  #about-us {
+    padding: 3.5rem 0;
+  }
   #about-us .row {
     display: flex;
+    gap: 5%;
   }
-  #about-us .col {
-    width: 50%;
+  .about-left {
+    width: 60%;
+  }
+  .about-right {
+    width: 40%;
+  }
+  .about-right h2 {
+    line-height: 2.5rem;
+    font-weight: bolder;
+  }
+  .about-us-title {
+    font-size: 4rem;
+  }
+  .about-img img {
+    width: 70%;
+  }
+  .quote-left {
+    position: absolute;
+    top: 0;
+    left: 55%;
+
+    color: var(--purple);
+    font-size: 4rem;
   }
 }
 
