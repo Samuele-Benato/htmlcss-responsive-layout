@@ -746,6 +746,22 @@ p {
   #benefits .col {
     width: calc(100% / 3);
   }
+
+  .card .number {
+    padding-bottom: 1.25rem;
+    font-size: 4rem;
+  }
+
+  .benefit-title {
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  #benefits p {
+    color: var(--gray);
+    line-height: 1.5rem;
+  }
+
   /* ABOUT US SECTION */
   #about-us .about-left {
     width: 70%;
